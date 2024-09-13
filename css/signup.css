@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Da|Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  height: 100%;
+}
+
+body {
+  background-color: aliceblue;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div.container {
+  display: flex;
+  height: 80%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-around;
+  width: 90%;
+  margin: 5% auto;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+div.container .centre-right {
+  width: 50%;
+  background-image: linear-gradient(to right, #1D7447, #298A6B, #238260);
+}
+div.container .centre-left {
+  width: 50%;
+}
+div.container div.left {
+  padding-top: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #1D7447;
+  height: 100%;
+  border-bottom-left-radius: 28% 35%;
+  border-top-right-radius: 25% 28%;
+  width: 100%;
+}
+div.container div.left span {
+  display: block;
+  text-transform: lowercase;
+  font-size: 1.2rem;
+}
+div.container div.left img {
+  padding-top: 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+div.container div.left h2 {
+  padding-top: 25px;
+  text-transform: capitalize;
+  font-size: 3.5rem;
+}
+div.container div.left p {
+  font-size: 1.3rem;
+  text-align: center;
+  position: relative;
+}
+div.container div.left button {
+  width: 50%;
+  background: transparent;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 1.3rem;
+  border: 2px solid #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+div.container div.left button a {
+  text-decoration: none;
+  color: #fff;
+}
+div.container div.left button:hover {
+  background-color: #fff;
+}
+div.container div.left button:hover a {
+  color: #1D7447;
+}
+div.container div {
+  background-color: #fff;
+}
+div.container div div.right {
+  padding-top: 90px;
+  box-sizing: border-box;
+  border-top-right-radius: 25% 28%;
+  text-align: center;
+  margin: 0;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+}
+div.container div div.right h2 {
+  color: #1D7447;
+  padding-top: 40px;
+  font-size: 3.5rem;
+}
+div.container div div.right p {
+  color: rgba(31, 34, 26, 0.785);
+  font-size: 1.5rem;
+}
+div.container div div.right form input {
+  margin: 1%;
+  border-top-right-radius: 10px;
+  padding: 8px;
+  border-bottom-left-radius: 10px;
+  background-color: #BBF7E8;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  width: 65%;
+  height: 30px;
+}
+div.container div div.right p a {
+  color: #298A6B;
+  text-decoration: none;
+}
+div.container div div.right p a:hover {
+  color: #BFE3D7;
+}
+div.container div div.right input[type=button] {
+  background-color: #1D7447;
+  color: #fff;
+  padding: 10px;
+  height: 45px;
+  width: 35%;
+}
+div.container div div.right input[type=button]:hover {
+  background-color: #BFE3D7;
+  color: #1D7447;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* Small phones (320px - 480px) */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    height: 100%;
+  }
+  div.container {
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  div.container div#centre-r {
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+  }
+  div.container div#centre-r div.right {
+    padding-top: 10px;
+    border-top-right-radius: 0%;
+  }
+  div.container div#centre-r div.right h2 {
+    padding-top: 0;
+  }
+  div.container div#centre-r div.right form input[type=button] {
+    width: 50%;
+  }
+  div.container div#centre-r div.right p {
+    font-size: 0.875rem;
+    color: rgba(31, 34, 26, 0.785);
+    margin: 0 0 30px 0;
+  }
+  div.container div#centre-l {
+    height: 40%;
+    width: 100%;
+  }
+  div.container div#centre-l div#lef {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom-left-radius: 50% 39%;
+    border-top-right-radius: 39% 50%;
+  }
+  div.container div#centre-l div#lef h2,
+  div.container div#centre-l div#lef p,
+  div.container div#centre-l div#lef button {
+    display: none;
+  }
+  div.container div#centre-l div#lef img.logo {
+    height: 85px;
+    width: 80px;
+    border-radius: 40%;
+    padding-top: 0;
+    margin-top: 70px;
+  }
+  div.container div#centre-l div#lef span {
+    font-size: 1rem;
+    color: #fff;
+  }
+  div.container h2 {
+    font-size: 2.5rem;
+  }
+}
+/* Tablets (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  div.container {
+    flex-direction: row;
+    width: 95%;
+  }
+  div.container div#centre-r {
+    width: 50%;
+  }
+  div.container div#centre-r div.right {
+    padding-top: 50px;
+  }
+  div.container div#centre-r div.right h2 {
+    padding-top: 0;
+  }
+  div.container div#centre-r div.right form input[type=button] {
+    margin-top: 10px;
+    width: 65%;
+  }
+  div.container div#centre-r div#centre-l {
+    width: 50%;
+  }
+  div.container div#centre-r div#centre-l div#lef button {
+    margin: 0;
+  }
+  div.container h2 {
+    font-size: 3rem;
+  }
+  /* Android (480px - 768px) */
+  /* 4K Screens (min-width: 2560px) */
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (min-width: 480px) and (max-width: 767px) {
+  body {
+    height: 100%;
+  }
+  div.container {
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  div.container div#centre-r {
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+  }
+  div.container div#centre-r div.right {
+    padding-top: 20px;
+    border-top-right-radius: 0%;
+    box-sizing: border-box;
+  }
+  div.container div#centre-r div.right h2 {
+    padding-top: 10px;
+  }
+  div.container div#centre-r div.right > p {
+    font-size: 0.875rem;
+    color: rgba(31, 34, 26, 0.785);
+    margin: 0 0 10px 0;
+  }
+  div.container div#centre-r div.right form p {
+    margin: 0;
+  }
+  div.container div#centre-r div.right form input[type=button] {
+    margin-top: 25px;
+  }
+  div.container div#centre-l {
+    height: 45%;
+    width: 100%;
+  }
+  div.container div#centre-l div#lef {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom-left-radius: 50% 39%;
+    border-top-right-radius: 39% 50%;
+  }
+  div.container div#centre-l div#lef h2,
+  div.container div#centre-l div#lef p,
+  div.container div#centre-l div#lef button {
+    display: none;
+  }
+  div.container div#centre-l div#lef img.logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 40%;
+    padding-top: 0;
+    margin-top: 60px;
+  }
+  div.container div#centre-l div#lef span {
+    font-size: 2rem;
+    color: #fff;
+  }
+  div.container h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (min-width: 2560px) {
+  div.container {
+    width: 70%;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=signup.css.map */
