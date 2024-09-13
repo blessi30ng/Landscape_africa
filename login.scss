@@ -1,0 +1,376 @@
+@use '_variable';
+
+body {
+    background-color: variable.$bg-color;
+    // height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.container {
+    display: flex;
+    height: 80%;
+    text-align: center;
+    font-family: variable.$roboto;
+    justify-content: space-around;
+    width: 90%;
+    margin: 5% auto;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+
+    .centre-right {
+        width: 50%;
+        // background-color: variable.$tck;
+        background-image: linear-gradient(to right, variable.$tck, variable.$linear-grd1, variable.$linear-grd);
+    }
+
+    .centre-left {
+        width: 50%;
+    }
+
+    div.left {
+        padding-top: 100px;
+        box-sizing: border-box;
+        // text-align: center;
+        color: variable.$white;
+        background-color: variable.$tck;
+        height: 100%;
+        border-bottom-left-radius: 28% 35%;
+        border-top-right-radius: 25% 28%;
+        width: 100%;
+
+        span {
+            display: block;
+            text-transform: lowercase;
+            font-size: 1rem;
+        }
+
+        img {
+            padding-top: 50px;
+            width: 15px;
+            height: 20px;
+        }
+
+        h2 {
+            padding-top: 25px;
+            text-transform: capitalize;
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        button {
+            a {
+                text-decoration: none;
+                color: variable.$white;
+
+            }
+
+            width: 50%;
+            background: transparent;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-size: 1.3rem;
+            border: 2px solid variable.$white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 50px;
+        }
+
+        button:hover {
+            background-color: variable.$white;
+
+            a {
+                color: variable.$top-color;
+            }
+        }
+
+    }
+
+    div {
+        background-color: variable.$white;
+
+        div.right {
+            padding-top: 90px;
+            box-sizing: border-box;
+            border-top-right-radius: 25% 28%;
+            text-align: center;
+            margin: 0;
+            background-color: variable.$white;
+            height: 100%;
+            width: 100%;
+            font-size: 1rem;
+
+            h2 {
+                color: variable.$top-color;
+                padding-top: 40px;
+                font-size: 3.5rem;
+            }
+
+            p {
+                color: variable.$color;
+                font-size: 1.5rem;
+            }
+
+            form {
+                input {
+                    margin: 2%;
+                    border-top-right-radius: 9px;
+                    padding: 9px;
+                    border-bottom-left-radius: 9px;
+                    background-color: variable.$btn-color;
+                    border: none;
+                    outline: none;
+                    font-size: 1.2rem;
+                }
+
+                input[type="email"],
+                input[type="password"] {
+                    width: 65%;
+                    height: 30px;
+                }
+
+                p a {
+                    color: variable.$linear-grd1;
+                    text-decoration: none;
+                }
+
+                p a:hover {
+                    color: variable.$lg-color;
+                }
+            }
+
+            input[type="button"] {
+                margin-bottom: 30px;
+                background-color: variable.$top-color;
+                color: variable.$white;
+                padding: 10px;
+                text-transform: uppercase;
+                width: 30%;
+            }
+
+            input[type="button"]:hover {
+                background-color: variable.$lg-color;
+                color: variable.$top-color;
+            }
+        }
+    }
+}
+
+h2 {
+    margin: 0;
+}
+
+
+
+/* Small phones (320px - 480px) */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body{
+        height: 100%;
+    }
+    div.container {
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        div#centre-r {
+            width: 100%;
+            height: 60%;
+            box-sizing: border-box;
+
+            div.right {
+                padding-top: 20px;
+                border-top-right-radius: 0%;
+
+                h2 {
+                    padding-top: 0;
+                }
+
+                p {
+                    font-size: 0.875rem;
+                    color: variable.$color;
+                    margin: 0 0 30px 0;
+                }
+            }
+        }
+
+        div#centre-l {
+            height: 40%;
+            width: 100%;
+
+            div#lef {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                border-bottom-left-radius: 50% 39%;
+                border-top-right-radius: 39% 50%;
+
+                h2,
+                p,
+                button {
+                    display: none;
+                }
+
+                img.logo {
+                    height: 85px;
+                    width: 80px;
+                    border-radius: 40%;
+                    padding-top: 0;
+                    margin-top: 70px;
+
+                }
+
+                span {
+                    font-size: 1rem;
+                    color: variable.$white;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    div.container {
+        flex-direction: row;
+        width: 95%;
+        .centre-right{
+            width: 50%;
+            
+        }
+        div#centre-l {
+            width: 50%;
+            div#lef{
+                button{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Android (480px - 768px) */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    body{
+        height: 100%;
+    }
+    div.container {
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        div#centre-r {
+            width: 100%;
+            height: 60%;
+            box-sizing: border-box;
+
+            div.right {
+                padding-top: 20px;
+                border-top-right-radius: 0%;
+                box-sizing: border-box;
+
+                h2 {
+                    padding-top: 10px;
+                }
+
+                > p {
+                    font-size: 0.875rem;
+                    color: variable.$color;
+                    margin: 0 0 10px 0;
+                }
+                form{
+                    p{
+                        margin: 0;
+                    }
+                    input[type="button"]{
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+
+        div#centre-l {
+            height: 45%;
+            width: 100%;
+
+            div#lef {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                border-bottom-left-radius: 50% 39%;
+                border-top-right-radius: 39% 50%;
+
+                h2,
+                p,
+                button {
+                    display: none;
+                }
+
+                img.logo {
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 40%;
+                    padding-top: 0;
+                    margin-top: 60px;
+
+                }
+
+                span {
+                    font-size: 2rem;
+                    color: variable.$white;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+
+/* Large Laptops (1025px - 1440px) */
+// @media screen and (min-width: 1025px) and (max-width: 1440px) {
+//     div.container {
+//         width: 85%;
+//     }
+//     .centre-right, .centre-left {
+//         width: 48%;
+//     }
+//     h2 {
+//         font-size: 3.2rem;
+//     }
+// }
+
+/* 4K Screens (min-width: 2560px) */
+@media screen and (min-width: 2560px) {
+    div.container {
+        width: 70%;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+}
+
+
+// clip-path: polygon(0 0, 78% 0, 92% 15%, 100% 34%, 100% 100%, 34% 100%, 13% 91%, 0 75%);
+// clip-path: polygon(0 0, 78% 0, 92% 15%, 100% 34%, 100% 100%, 34% 100%, 13% 91%, 0 75%);

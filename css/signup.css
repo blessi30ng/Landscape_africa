@@ -31,7 +31,7 @@ div.container .centre-left {
   width: 50%;
 }
 div.container div.left {
-  padding-top: 100px;
+  padding-top: 10px;
   box-sizing: border-box;
   color: #fff;
   background-color: #1D7447;
@@ -43,12 +43,13 @@ div.container div.left {
 div.container div.left span {
   display: block;
   text-transform: lowercase;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 div.container div.left img {
-  padding-top: 50px;
-  width: 15px;
-  height: 20px;
+  padding-top: 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
 }
 div.container div.left h2 {
   padding-top: 25px;
@@ -105,34 +106,30 @@ div.container div div.right p {
   font-size: 1.5rem;
 }
 div.container div div.right form input {
-  margin: 2%;
-  border-top-right-radius: 9px;
-  padding: 9px;
-  border-bottom-left-radius: 9px;
+  margin: 1%;
+  border-top-right-radius: 10px;
+  padding: 8px;
+  border-bottom-left-radius: 10px;
   background-color: #BBF7E8;
   border: none;
   outline: none;
   font-size: 1.2rem;
-}
-div.container div div.right form input[type=email],
-div.container div div.right form input[type=password] {
   width: 65%;
   height: 30px;
 }
-div.container div div.right form p a {
+div.container div div.right p a {
   color: #298A6B;
   text-decoration: none;
 }
-div.container div div.right form p a:hover {
+div.container div div.right p a:hover {
   color: #BFE3D7;
 }
 div.container div div.right input[type=button] {
-  margin-bottom: 30px;
   background-color: #1D7447;
   color: #fff;
   padding: 10px;
-  text-transform: uppercase;
-  width: 30%;
+  height: 45px;
+  width: 35%;
 }
 div.container div div.right input[type=button]:hover {
   background-color: #BFE3D7;
@@ -160,11 +157,14 @@ h2 {
     box-sizing: border-box;
   }
   div.container div#centre-r div.right {
-    padding-top: 20px;
+    padding-top: 10px;
     border-top-right-radius: 0%;
   }
   div.container div#centre-r div.right h2 {
     padding-top: 0;
+  }
+  div.container div#centre-r div.right form input[type=button] {
+    width: 50%;
   }
   div.container div#centre-r div.right p {
     font-size: 0.875rem;
@@ -205,25 +205,40 @@ h2 {
 }
 /* Tablets (768px - 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    height: 100%;
+    box-sizing: border-box;
+  }
   div.container {
     flex-direction: row;
     width: 95%;
   }
-  div.container .centre-right {
+  div.container div#centre-r {
     width: 50%;
   }
-  div.container div#centre-l {
+  div.container div#centre-r div.right {
+    padding-top: 50px;
+  }
+  div.container div#centre-r div.right h2 {
+    padding-top: 0;
+  }
+  div.container div#centre-r div.right form input[type=button] {
+    margin-top: 10px;
+    width: 65%;
+  }
+  div.container div#centre-r div#centre-l {
     width: 50%;
   }
-  div.container div#centre-l div#lef button {
+  div.container div#centre-r div#centre-l div#lef button {
     margin: 0;
   }
-  h2 {
+  div.container h2 {
     font-size: 3rem;
   }
+  /* Android (480px - 768px) */
+  /* 4K Screens (min-width: 2560px) */
 }
-/* Android (480px - 768px) */
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) and (min-width: 480px) and (max-width: 767px) {
   body {
     height: 100%;
   }
@@ -289,9 +304,7 @@ h2 {
     font-size: 2.5rem;
   }
 }
-/* Large Laptops (1025px - 1440px) */
-/* 4K Screens (min-width: 2560px) */
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) and (min-width: 2560px) {
   div.container {
     width: 70%;
   }
@@ -301,4 +314,4 @@ h2 {
   p {
     font-size: 2rem;
   }
-}/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=signup.css.map */
