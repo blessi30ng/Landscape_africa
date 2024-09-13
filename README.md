@@ -52,9 +52,10 @@ The **Landscape Africa** is a web application designed to provide users with det
    ```
 
 2. **Access the application**:
-   Once the server is running, open your browser and navigate to:
+   Once the server is running, open your browser and navigate to: 
+   link not available for now, so use local host @ 
    ```
-   link not available for now, so use local host @ http://localhost:5000
+   http://localhost:5000
    ```
 
 ## Contributing
