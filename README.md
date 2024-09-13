@@ -67,5 +67,5 @@ For questions, feedback, or issues, feel free to reach out:
 - **Email**: abangayoma@gmail.com
 - **GitHub**: [abangayoma](https://github.com/abangAyoma)
 
-- **Email**: blessing@gmail.com
+- **Email**: blessingchidewu3@@gmail.com
 - **GitHub**: [blessi30ng](https://github.com/blessi30ng)
