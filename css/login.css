@@ -7,7 +7,6 @@
 
 body {
   background-color: aliceblue;
-  height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -146,6 +145,9 @@ h2 {
 
 /* Small phones (320px - 480px) */
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    height: 100%;
+  }
   div.container {
     margin: 0;
     flex-direction: column;
