@@ -220,4 +220,83 @@ h2 {
     font-size: 3rem;
   }
 }
-/* Large Laptops (1025px - 1440px) *//*# sourceMappingURL=login.css.map */
+/* Android (480px - 768px) */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  body {
+    height: 100%;
+  }
+  div.container {
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  div.container div#centre-r {
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+  }
+  div.container div#centre-r div.right {
+    padding-top: 20px;
+    border-top-right-radius: 0%;
+    box-sizing: border-box;
+  }
+  div.container div#centre-r div.right h2 {
+    padding-top: 10px;
+  }
+  div.container div#centre-r div.right > p {
+    font-size: 0.875rem;
+    color: rgba(31, 34, 26, 0.785);
+    margin: 0 0 10px 0;
+  }
+  div.container div#centre-r div.right form p {
+    margin: 0;
+  }
+  div.container div#centre-r div.right form input[type=button] {
+    margin-top: 25px;
+  }
+  div.container div#centre-l {
+    height: 45%;
+    width: 100%;
+  }
+  div.container div#centre-l div#lef {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom-left-radius: 50% 39%;
+    border-top-right-radius: 39% 50%;
+  }
+  div.container div#centre-l div#lef h2,
+  div.container div#centre-l div#lef p,
+  div.container div#centre-l div#lef button {
+    display: none;
+  }
+  div.container div#centre-l div#lef img.logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 40%;
+    padding-top: 0;
+    margin-top: 60px;
+  }
+  div.container div#centre-l div#lef span {
+    font-size: 2rem;
+    color: #fff;
+  }
+  div.container h2 {
+    font-size: 2.5rem;
+  }
+}
+/* Large Laptops (1025px - 1440px) */
+/* 4K Screens (min-width: 2560px) */
+@media screen and (min-width: 2560px) {
+  div.container {
+    width: 70%;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=login.css.map */
