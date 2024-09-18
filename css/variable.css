@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Da|Roboto");
+@import url("style.css");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone: hsl(30, 54%, 90%); /*stone 100 */
+  --Stone-md: hsl(30, 18%, 87%);
+  --Stone-lg: hsl(30, 10%, 34%);
+  --Stone-xlg: hsl(24, 5%, 18%);
+
+  --Brown: hsl(14, 45%, 36%);
+  --Rose-lg: hsl(332, 51%, 32%);
+  --Rose: hsl(330, 100%, 98%);
+  --Border: hsl(43, 100%, 66%);
+  --eutral--600: #586272;
+  --neutral--800: #161c24;
+  --secondary--color-2: #57aef4;
+  --secondary--color-3: #e9f4ff;
+  --neutral--400: #d9dce2;
+  --general--shadow-01: #161c240f;
+  --neutral--300: #eceff3;
+  --neutral--100: white;
+  --general--shadow-02: #161c2414;
+  --neutral--200: #f7f9fc;
+  --button-shadow--color-2: #ffce5114;
+  --secondary--color-1: #1a386a;
+  --neutral--700: #3d4249;
+  --neutral--500: #9399a2;
+  --system--green-400: #11845b;
+  --system--blue-400: #086cd9;
+  --system--blue-300: #1d88fe;
+  --system--blue-200: #8fc3ff;
+  --system--blue-100: #eaf4ff;
+  --system--green-300: #05c168;
+  --system--green-200: #7fdca4;
+  --system--green-100: #def2e6;
+  --system--red-400: #dc2b2b;
+  --system--300: #ff5a65;
+  --system--red-200: #ffbec2;
+  --system--red-100: #ffeff0;
+  --system--orange-400: #d5691b;
+  --system--orange-300: #ff9e2c;
+  --system--orange-200: #ffd19b;
+  --system--orange-100: #fff3e4;
+  --general--shadow-03: #161c241a;
+  --general--shadow-04: #161c2424;
+  --general--shadow-05: #161c2429;
+  --general--shadow-06: #161c243d;
+  --button-shadow--color-01: #ffce510f;
+  --button-shadow--color-03: #ffce511f;
+  --button-shadow--white-01: #161c240a;
+  --button-shadow--white-02: #161c240f;
+  --button-shadow--white-03: #161c241a;
+
+  /*----FONTS----*/
+  --Young-Serif: "Young Serif", serif;
+  --Outfit: "Outfit", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  height: 100%;
+  width: 100%;
+}
