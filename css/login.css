@@ -31,7 +31,7 @@ div.container .centre-left {
   width: 50%;
 }
 div.container div.left {
-  padding-top: 100px;
+  padding-top: 50px;
   box-sizing: border-box;
   color: #fff;
   background-color: #1D7447;
@@ -46,9 +46,9 @@ div.container div.left span {
   font-size: 1rem;
 }
 div.container div.left img {
-  padding-top: 50px;
-  width: 15px;
-  height: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 div.container div.left h2 {
   padding-top: 25px;

@@ -30,7 +30,7 @@ div.container {
     }
 
     div.left {
-        padding-top: 100px;
+        padding-top: 50px;
         box-sizing: border-box;
         // text-align: center;
         color: variable.$white;
@@ -47,9 +47,9 @@ div.container {
         }
 
         img {
-            padding-top: 50px;
-            width: 15px;
-            height: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
         }
 
         h2 {
