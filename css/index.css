@@ -3,4 +3,111 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 :root {
   height: 100%;
+}
+
+main {
+  height: 88vh;
+  font-size: 0.875rem;
+  background-color: darkgray;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/assets/land2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main h1 {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-weight: 500;
+}
+main h1 span {
+  margin-left: 25%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #323232;
+  color: #fff;
+  font-family: "Young Serif", serif, "Roboto", sans-serif, "Outfit", sans-serif;
+}
+
+nav {
+  height: 85px;
+  padding: 0;
+  margin: 0;
+  background-color: #1B5B40;
+  color: #fff;
+  font-family: "Young Serif", serif, "Roboto", sans-serif, "Outfit", sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  display: flex;
+}
+nav div.nav-right {
+  width: 30%;
+}
+nav div.nav-left ul {
+  display: flex;
+  text-transform: capitalize;
+  margin: 0;
+}
+nav div.nav-left ul li {
+  width: 110px;
+  height: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 23px;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+  /* Applies to background color and transform properties */
+  margin-right: 50px;
+  list-style-type: none;
+}
+nav div.nav-left ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+nav div.nav-left ul li.sign-up {
+  text-align: left;
+  position: relative;
+  left: -95px;
+}
+nav div.nav-left ul li.sign-up:hover {
+  margin-left: 20px;
+  transform: scale(1.1);
+}
+nav div.nav-left ul li.login:hover {
+  background-color: #fff;
+  margin-right: 90px;
+  color: #1B5B40;
+  width: 100px;
+  transform: scale(1.1);
+}
+nav div.nav-left ul li.login:hover a {
+  color: #1B5B40;
+}
+nav div.nav-left ul li:hover {
+  background-color: #fff;
+  text-align: center;
+  transform: scale(1.1);
+  /* Slightly increases size on hover */
+  align-items: center;
+  padding: 23px;
+  border-radius: 15px;
+}
+nav div.nav-left ul li:hover a {
+  color: #1B5B40;
+}
+nav div.nav-right {
+  display: block;
+}
+nav div.nav-right img {
+  height: 84px;
 }/*# sourceMappingURL=index.css.map */

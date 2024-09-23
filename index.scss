@@ -1,0 +1,133 @@
+@use '_variable';
+
+@mixin align($theme: darkgray) {
+    font-size: 0.875rem;
+    background-color: $theme;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin bd($color: #323232) {
+    padding: 0;
+    margin: 0;
+    background-color: $color;
+    color: variable.$white;
+    font-family: variable.$young-serif, variable.$roboto, variable.$outfit;
+}
+
+main {
+    height: 88vh;
+    @include align;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            /* Adjust this color and opacity */
+            rgba(0, 0, 0, 0.1)),
+        url('/assets/land2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        margin: 0;
+        font-family: variable.$outfit;
+        text-transform: capitalize;
+        font-size: 4rem;
+        font-weight: 500;
+
+        span {
+            margin-left: 25%;
+        }
+
+    }
+}
+
+body {
+    @include bd;
+}
+
+nav {
+    height: 85px;
+    @include bd($color: variable.$wlcm-color);
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    display: flex;
+
+    div.nav-right {
+        width: 30%;
+    }
+
+    div.nav-left {
+        ul {
+            display: flex;
+            text-transform: capitalize;
+            margin: 0;
+
+            li {
+                width: 110px;
+                height: 20px;
+                font-size: 1.2rem;
+                text-align: center;
+                padding: 23px;
+                transition: background-color 0.5s ease, transform 0.5s ease;
+                /* Applies to background color and transform properties */
+
+                margin-right: 50px;
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    color: variable.$white;
+                }
+            }
+
+            li.sign-up {
+                text-align: left;
+                position: relative;
+                left: -95px;
+            }
+
+            li.sign-up:hover {
+                margin-left: 20px;
+                transform: scale(1.1);
+            }
+
+            li.login:hover {
+                background-color: variable.$white;
+                margin-right: 90px;
+                color: variable.$wlcm-color;
+                width: 100px;
+                transform: scale(1.1);
+
+                a {
+                    color: variable.$wlcm-color;
+                }
+            }
+
+            li:hover {
+                background-color: variable.$white;
+                text-align: center;
+                transform: scale(1.1);
+                /* Slightly increases size on hover */
+                align-items: center;
+                padding: 23px;
+                border-radius: 15px;
+
+                a {
+                    color: variable.$wlcm-color;
+                }
+            }
+        }
+    }
+
+    div.nav-right {
+        display: block;
+
+        img {
+            height: 84px;
+        }
+    }
+}
