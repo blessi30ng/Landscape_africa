@@ -1,0 +1,85 @@
+@import url(./_variable.scss);
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.about-main {
+  background: linear-gradient(rgba(8, 25, 18, 0.1), rgba(1, 22, 12, 0.4)), url("https://www.ruppertlandscape.com/wp-content/uploads/2022/10/Site-Structures-scaled.jpg");
+  height: 95vh;
+  background-position: right;
+  text-align: center;
+  color: white;
+  place-content: center;
+  margin-bottom: 2rem;
+}
+.about-main h1 {
+  font-size: 6rem;
+}
+.about-main div {
+  margin: 0 auto;
+  background: white;
+  height: 0.5rem;
+  width: 10rem;
+  margin-bottom: 3rem;
+}
+.about-main p {
+  line-height: 2;
+  background: rgba(10, 73, 28, 0.5);
+}
+@media screen and (max-width: 320px) {
+  .about-main h1 {
+    font-size: 3rem;
+  }
+  .about-main p {
+    padding: 0 2rem;
+  }
+  .about-main div {
+    height: 0.5rem;
+    width: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+section p strong {
+  color: #176b48;
+}
+section div {
+  padding: 0 3rem;
+}
+
+body ul {
+  text-align: center;
+  list-style-type: none;
+  line-height: 1.5;
+  margin: 2rem;
+}
+body ul div {
+  background: #176b48;
+  height: 0.3rem;
+  width: 2rem;
+  margin-inline: auto;
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  background: #176b48;
+  color: white;
+  padding: 1rem;
+  color: rgb(240, 241, 241);
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 320px) {
+  section {
+    display: block;
+  }
+  section div {
+    margin: 1.5rem 0;
+  }
+}/*# sourceMappingURL=about.css.map */
